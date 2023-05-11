@@ -1,0 +1,13 @@
+.page-wrapper{
+    .page-header{
+        background-color: #2874F0;
+    }    
+}
+
+.blocks-promo{
+    .content{
+        .button.more{
+            background-color: red;
+        }
+    }
+}

@@ -1,0 +1,234 @@
+@import '../_variables.less';
+
+
+.action {
+    &.primary {
+        background-color: @color-primary;
+        border-color: @color-primary;
+    }
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.page-header .panel.wrapper {
+    background-color: @color-secondary;
+}
+
+.nav-sections-item-content,
+.navigation {
+    background-color: @color-secondary;
+}
+
+.navigation .level0>.level-top {
+    color: @color-white;
+}
+
+.page-header {
+    background-color: @color-secondary;
+}
+
+.navigation {
+    &:hover {
+        .ui-menu-item {
+            &.level0 {
+                a {
+                    span {
+                        color: @color-white;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+.content-heading {
+    text-align: center;
+    margin: 50px 0 25px !important;
+}
+
+.media-width(@extremum, @break) when (@extremum ='min') and (@break =@screen__s) {
+
+    // your code
+    .nav-sections-item-content {
+        .navigation {
+            max-width: 644px;
+            margin: auto;
+        }
+    }
+
+    // categories-css
+    .category-div {
+        display: flex;
+        justify-content: space-between;
+        grid-gap: 20px;
+
+        .categories-block {
+            position: relative;
+            height: 500px;
+            width: 513px;
+            background-size: cover;
+
+            .category-info {
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+                background: rgba(0, 0, 0, 0.4);
+                padding: 15px 20px;
+
+                h4 {
+                    font-size: @font-mediumsize;
+                    color: @color-white;
+                    margin-top: 0;
+                    font-weight: 300;
+                    text-transform: uppercase;
+
+                }
+
+                button {
+                    background-color: @color-primary;
+                    border: none;
+
+                    a {
+                        color: @color-white;
+
+                        &.hover {
+                            text-decoration: none;
+                        }
+
+                    }
+
+                }
+            }
+        }
+
+    }
+
+    // blog-css
+
+    .section-blog {
+        .blog-img {
+            overflow: hidden;
+        }
+
+        .blog-date {
+            color: @color-secondary;
+            font-size: 14px;
+        }
+
+        .blog-title {
+            color: @color-secondary;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .blog-info {
+            color: rgba(0, 0, 0, 0.5);
+            font-size: 16px;
+        }
+
+
+        .slick-slider {
+            margin: 0 -15px;
+        }
+
+        .slick-slide {
+            padding: 10px;
+            text-align: center;
+            margin-right: 15px;
+            margin-left: 15px;
+        }
+
+    }
+
+
+    //new products list
+
+    .new-products-list {
+        .product-items {
+            .product-item {
+
+                background-color: @color-text;
+
+                .product-item-info {
+                    padding: 20px;
+                }
+            }
+        }
+    }
+
+
+    //slick slider images
+
+    section.section {
+        background: transparent;
+    }
+
+    .slideshow {
+
+
+        .slide img {
+            max-width: 100%;
+            width: 100%;
+        }
+
+        .slick-prev:before,
+        .slick-next:before {
+            color: black;
+        }
+    }
+
+
+    // .product-items {
+    //     &.widget-product-carousel {
+    //         .slick-prev {
+    //             left: 2rem;
+    //         }
+
+    //         .slick-next {
+    //             right: -4rem;
+    //         }
+    //     }
+    // }
+
+    .hero-slider-section {
+        background-size: cover;
+        min-height: 500px;
+        position: relative;
+
+        .hero-content-info {
+            position: absolute;
+            top: 35%;
+            left: 4%;
+            color: @color-white;
+
+            p {
+                font-size: @font-mediumsize;
+            }
+
+            p+p {
+                font-size: @font-largesize;
+                line-height: 1;
+            }
+
+            p.discount {
+                font-size: @font-regularsize;
+            }
+
+            button {
+
+                margin-top: 10px;
+                .button-type-a();
+
+                a {
+                    color: @color-white;
+                }
+            }
+        }
+    }
+
+
+}

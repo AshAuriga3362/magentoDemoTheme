@@ -1,0 +1,152 @@
+@import 'sections/_variables.less';
+
+
+.block-search {
+    float: left;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 1280px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+}
+
+
+.media-width(@extremum, @break) when (@extremum ='min') and (@break = @screen__s) {
+
+
+    .background-cover-block {
+        background-image: url("images/bizkick-parralex-image.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        padding: 90px 0;
+        text-align: center;
+        width: 100%;
+        background-size: cover;
+
+        p {
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 60px;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        a.action-primary {
+            background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+            border-color: #f66d1f;
+            border-width: 2px;
+            font-size: 14px;
+            letter-spacing: 1.5px;
+            margin: 0;
+            padding: 15px 25px;
+        }
+
+
+    }
+
+    .category-div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .nav-sections-item-content {
+        background-color: #000;
+    }
+
+
+    .content-heading {
+        margin: 35px 75px !important;
+    }
+
+    .nav-sections {
+        margin-bottom: 0;
+    }
+
+    .nav-sections-item-content {
+        >.navigation {
+            max-width: 664px;
+            background-color: #000;
+
+            .level0>.level-top {
+                background-color: #000;
+                color: @text-color1;
+            }
+        }
+    }
+
+    .categories-block {
+        position: relative;
+        display: inline-block;
+
+        .category-img {
+            img {
+                width: 500px;
+                height: 500px;
+                object-fit: contain;
+            }
+        }
+    }
+
+
+    .category-info {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        max-width: 300px;
+
+        h4 {
+            color: @text-color1;
+            margin-bottom: 15px;
+            font-size: 30px;
+        }
+
+        a {
+            color: @text-color1;
+        }
+    }
+
+    a.category-link {
+        text-decoration: none;
+        text-transform: uppercase;
+        margin-left: auto;
+    }
+
+    .img-fluid {
+        max-width: 100%;
+        height: 100%;
+    }
+
+    .btn-category {
+        padding: 10px 15px;
+        background-color: @background-color_1;
+        border: none;
+    }
+
+
+
+    /** blog scss**/
+    .blog {
+        .blog-list {
+            display: flex;
+            flex-wrap: wrap;
+            grid-gap: 20px;
+        }
+    }
+
+
+
+}
